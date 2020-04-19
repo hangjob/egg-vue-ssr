@@ -1,4 +1,5 @@
 {
+  "common.js": "/public/js/chunk/common.js",
   "detail/index.js": "/public/js/chunk/detail/index.js",
   "index/index.js": "/public/js/chunk/index/index.js",
   "runtime.js": "/public/js/runtime.js",
@@ -6,6 +7,7 @@
     "detail/index.js": {
       "js": [
         "/public/js/runtime.js",
+        "/public/js/chunk/common.js",
         "/public/js/chunk/detail/index.js"
       ],
       "css": []
@@ -13,6 +15,7 @@
     "index/index.js": {
       "js": [
         "/public/js/runtime.js",
+        "/public/js/chunk/common.js",
         "/public/js/chunk/index/index.js"
       ],
       "css": []

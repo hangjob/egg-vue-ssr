@@ -16,6 +16,7 @@
   "dependencies": {
     "axios": "^0.18.1",
     "cross-env": "^5.0.0",
+    "css-loader": "^3.5.2",
     "egg": "^2.1.0",
     "egg-bin": "^4.3.7",
     "egg-cors": "^2.0.0",
@@ -26,14 +27,18 @@
     "element-ui": "^2.0.8",
     "extend": "~3.0.0",
     "font-awesome": "^4.7.0",
+    "less-loader": "^4.1.0",
     "lodash": "^4.17.4",
     "lodash-id": "^0.14.0",
     "lowdb": "^1.0.0",
     "mockjs": "^1.0.1-beta3",
     "moment": "^2.17.1",
+    "postcss": "^7.0.27",
+    "postcss-px2rem": "^0.3.0",
     "shortid": "^2.2.8",
     "showdown": "^1.8.6",
     "simplemde": "^1.11.2",
+    "style-loader": "^1.1.4",
     "vue": "^2.5.0",
     "vue-hot-reload-api": "^2.1.0",
     "vue-i18n": "^8.1.0",
@@ -54,7 +59,9 @@
     "eslint-plugin-vue": "^4.4.0",
     "ip": "^1.1.5",
     "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^6.0.6",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5"
   },
   "engines": {
     "node": ">=8.0.0"
