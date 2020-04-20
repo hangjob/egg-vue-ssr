@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-04-18 23:31:45
- * @LastEditTime: 2020-04-19 19:06:40
+ * @LastEditTime: 2020-04-20 23:45:12
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \egg\app\web\component\layout\layout.js
@@ -44,12 +44,13 @@ export default function createLayout(name, components, tpl) {
                       <meta name="apple-mobile-web-app-title" content="Weather PWA">
                       <link rel="apple-touch-icon" href="/images/logo.png">
 					  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-					  <link href="/public/asset/webui/pintuer-2.0.min.css?v=1" rel="stylesheet" type="text/css" />
-					  <script src="/public/asset/webui/jquery-3.4.1.min.js?v=1"></script>	
+					  <link href="/public/asset/staticExtent/webui/pintuer-2.0.min.css?v=1" rel="stylesheet" type="text/css" />
+                      <script src="/public/asset/staticExtent/webui/jquery-3.4.1.min.js?v=1"></script>
+                      <script src="/public/asset/staticExtent/flexible.js?v=1"></script>	
                     </head>
                     <body :class="baseClass">
 					  ${tpl}
-					  <script src="/public/asset/webui/pintuer-2.0.min.js?v=1"></script>
+					  <script src="/public/asset/staticExtent/webui/pintuer-2.0.min.js?v=1"></script>
                     </body>
                   </html>`,
         install(vue, options) {
