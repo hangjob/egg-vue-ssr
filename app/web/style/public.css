@@ -1,0 +1,22 @@
+html,
+body {
+    background-color: #f6f8fa;
+    font: 14px/1.5 "Microsoft Yahei", "HanHei SC", "PingHei", "PingFang SC", "STHeitiSC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+input:focus {
+    outline: none;
+}
+
+;
+input {
+    outline: none
+}
+
+.wp {}
+
+::selection {
+    background: #344449;
+    color: #fff;
+    text-shadow: none;
+}

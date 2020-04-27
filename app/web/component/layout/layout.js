@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-04-18 23:31:45
- * @LastEditTime: 2020-04-20 23:45:12
+ * @LastEditTime: 2020-04-27 22:43:38
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \egg\app\web\component\layout\layout.js
@@ -35,22 +35,18 @@ export default function createLayout(name, components, tpl) {
                       <meta name="description" :content="vDescription">
                       <meta http-equiv="content-type" content="text/html;charset=utf-8">
                       <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-                      <!-- Add to home screen for Windows -->
-                      <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
                       <meta name="msapplication-TileColor" content="#2F3BA2">
                       <!-- Add to home screen for Safari on iOS -->
                       <meta name="apple-mobile-web-app-capable" content="yes">
                       <meta name="apple-mobile-web-app-status-bar-style" content="black">
                       <meta name="apple-mobile-web-app-title" content="Weather PWA">
                       <link rel="apple-touch-icon" href="/images/logo.png">
-					  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-					  <link href="/public/asset/staticExtent/webui/pintuer-2.0.min.css?v=1" rel="stylesheet" type="text/css" />
-                      <script src="/public/asset/staticExtent/webui/jquery-3.4.1.min.js?v=1"></script>
-                      <script src="/public/asset/staticExtent/flexible.js?v=1"></script>	
+                      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+                      <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/at-ui-style/css/at.min.css">
+                      <link href="/public/asset/css/public.css?v=1" rel="stylesheet" type="text/css" />
                     </head>
                     <body :class="baseClass">
 					  ${tpl}
-					  <script src="/public/asset/staticExtent/webui/pintuer-2.0.min.js?v=1"></script>
                     </body>
                   </html>`,
         install(vue, options) {

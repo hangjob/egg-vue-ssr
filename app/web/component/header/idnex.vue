@@ -1,30 +1,27 @@
 <!--
  * @Author: your name
  * @Date: 2020-04-19 18:58:03
- * @LastEditTime: 2020-04-21 00:15:30
+ * @LastEditTime: 2020-04-27 23:23:19
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \egg\app\web\component\header\idnex.vue
  -->
 <template>
-	<div class="header">
-            <div class="container">
-                <div class="grid">
-                    <div class="mini-x6 small-x4 middle-x2 big-x2">
-                        <div class="logo">logo</div>
+	<header class="header">
+        <div class="wp">
+           <div class="container">
+                <div class="header-main">
+                    <div class="logo"><img src="@web/asset/images/logo.png"></div>
+                    <div class="search">
+                        <input type="text" placeholder="输入网址或者相关描述检索">
                     </div>
-                    <div class="mini-hidden small-show middle-show big-show mini-x6 small-x8 middle-x10 big-x10">
-                        <ul class="nav">
-                            <li><a>首页</a></li>
-                            <li><a>专栏</a></li>
-                            <li><a>热榜</a></li>
-                            <li><a>搜一搜</a></li>
-                            <li><a>关于</a></li>
-                        </ul>
+                    <div class="minapp">
+                        
                     </div>
                 </div>
-            </div>
-    </div>
+           </div>
+        </div>
+    </header>
 </template>
 <script type="text/babel">
 export default {
@@ -36,21 +33,38 @@ export default {
 </script>
 <style lang="less" scoped>
 .header{
-    background-color: #ffffff;
-    height: 120px;
-    max-height: 120px;
-    line-height: 120px;
-    background-color: #ffffff;
-    .nav{
-        li{
-            display: inline-block;
-            font-size: 0;
-            vertical-align: top;
-            height: 120px;
-            line-height: 120px;
-            a{
-                padding: 0 50px;
-                font-size: 30px;  
+    .container{
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    &-main{
+        background-color: #ffffff;
+        padding: 0 10px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        .logo{
+            height: 80px;
+            width: 220px;
+            border-right: 1px solid #f6f8fa;
+            display: flex;
+            align-items: center;
+            img{
+                height: 60px;
+            }
+        }
+        .search{
+            padding-left: 20px;
+            width: 40%;
+            input{
+                height: 60px;
+                border: none;
+                width: 100%;
+                display: block;
+            }
+            input::-webkit-input-placeholder{
+                color: #aab2bd;
+                font-size: 16px;
             }
         }
     }
